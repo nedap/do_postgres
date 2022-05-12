@@ -1,3 +1,11 @@
+# Rationale for fork
+
+The changes added to have this gem working with Ruby 3.x.x could have been made by vendorizing the gem, however:
+
+<img width="900" alt="Screenshot 2022-05-12 at 08 14 17" src="https://user-images.githubusercontent.com/389317/168007370-f49c5074-ea24-4f6d-b6b9-0aa53fe6c77a.png">
+
+As this gem actually requires the building of a C extension, creating a fork seems like the only possible solution.
+
 # do_postgres
 
 * <http://dataobjects.info>
