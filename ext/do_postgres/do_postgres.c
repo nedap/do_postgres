@@ -11,6 +11,10 @@
 #undef PACKAGE_TARNAME
 #undef PACKAGE_VERSION
 
+/* undef fprintf to make sure _pg_fprintf doesn't show up in the symbol
+ * tabel when we try and build this on Ruby 3.x.x
+ * This makes sure that instead of having an unbound symbol _pg_fprintf 
+ * we get an unbound fprintf that will get resolved to stdio */
 #undef fprintf
 
 #ifdef _WIN32
